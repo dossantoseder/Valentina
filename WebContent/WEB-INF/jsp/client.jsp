@@ -47,9 +47,9 @@
 			<span class="icon-bar"></span> <span class="icon-bar"></span>
 		</button>
 
-		<ul class="nav navbar-nav navbar-left navbar-top-links">
+		<!-- <ul class="nav navbar-nav navbar-left navbar-top-links">
 			<li><a href="#"><i class="fa fa-home fa-fw"></i> NFC-e</a></li>
-		</ul>
+		</ul> -->
 
 		<ul class="nav navbar-right navbar-top-links">
 			<li class="dropdown"><a class="dropdown-toggle"

@@ -11,9 +11,10 @@ import org.springframework.web.servlet.handler.AbstractHandlerMapping;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import br.com.saints.erp.controllers.HomeController;
+import br.com.saints.erp.dao.ClientDAO;
 
 @EnableWebMvc
-@ComponentScan(basePackageClasses={HomeController.class})
+@ComponentScan(basePackageClasses={HomeController.class, ClientDAO.class})
 public class AppWebConfiguration extends WebMvcConfigurationSupport {
 	
 	@Bean
@@ -34,7 +35,7 @@ public class AppWebConfiguration extends WebMvcConfigurationSupport {
         configurer.enable();
     }
 
-    //retorna um objeto de HandlerMapping que È necess·rio (n„o me pergunte o pq rsrs)
+    //retorna um objeto de HandlerMapping que √© necess√°rio, pesquisar melhor
     @Bean
     public HandlerMapping resourceHandlerMapping() {
         AbstractHandlerMapping handlerMapping = (AbstractHandlerMapping) super.resourceHandlerMapping();
