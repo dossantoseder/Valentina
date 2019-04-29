@@ -19,7 +19,7 @@ public class ClientController {
 	}
 
 	@RequestMapping("/addclient")
-	public String addClient() {
+	public String addClient(Client c) {
 		return "redirect:client/client";
 	}
 	@RequestMapping("/searchclient")
@@ -30,6 +30,6 @@ public class ClientController {
 	}
 	@RequestMapping("/removeclient")
 	public String removeClient(Client c) {
-		return "redirect:client/client";
+		return "redirect:client/client";//"forward:client/client";
 	}
 }
