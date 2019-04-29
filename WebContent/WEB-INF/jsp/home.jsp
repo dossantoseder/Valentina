@@ -6,7 +6,7 @@
     <meta http-equiv="refresh" content="0;url=pages/index.html">
     <title>Startmin</title>
     <script language="javascript">
-        window.location.href = "pages/index.jsp"
+        window.location.href = "pages/home.jsp"
     </script>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 </head>

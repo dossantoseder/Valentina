@@ -99,7 +99,7 @@
                                 <a href="index.html" class="active"><i class="fa fa-dashboard fa-fw"></i> NFC-e</a>
                             </li> -->
                             <li>
-                                <a href="emitente.html"><i class="fa fa-edit fa-fw"></i> Emitente</a>
+                                <a href="client"><i class="fa fa-edit fa-fw"></i> Emitente</a>
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>

@@ -116,7 +116,7 @@
 						<div class="panel-body">
 							<div class="row">
 								<div class="col-lg-12">
-									<form role="form">
+									<form action="addclient" method="post">
 										<div class="form-group">
 											<label>CPF</label> <input class="form-control"
 												placeholder="Ex. xxx.xxx.xxx-xx">
