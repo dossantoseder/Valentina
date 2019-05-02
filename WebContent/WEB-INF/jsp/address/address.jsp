@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -10,16 +12,16 @@
         <title>Endereço - Cadastro de Endereço</title>
 
         <!-- Bootstrap Core CSS -->
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="resources/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- MetisMenu CSS -->
-        <link href="../css/metisMenu.min.css" rel="stylesheet">
+        <link href="resources/css/metisMenu.min.css" rel="stylesheet">
 
         <!-- Custom CSS -->
-        <link href="../css/startmin.css" rel="stylesheet">
+        <link href="resources/css/startmin.css" rel="stylesheet">
 
         <!-- Custom Fonts -->
-        <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="resources/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -222,16 +224,16 @@
         <!-- /#wrapper -->
 
         <!-- jQuery -->
-        <script src="../js/jquery.min.js"></script>
+        <script src="resources/js/jquery.min.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
-        <script src="../js/bootstrap.min.js"></script>
+        <script src="resources/js/bootstrap.min.js"></script>
 
         <!-- Metis Menu Plugin JavaScript -->
-        <script src="../js/metisMenu.min.js"></script>
+        <script src="resources/js/metisMenu.min.js"></script>
 
         <!-- Custom Theme JavaScript -->
-        <script src="../js/startmin.js"></script>
+        <script src="resources/js/startmin.js"></script>
 
     </body>
 </html>
