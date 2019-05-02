@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -116,18 +117,24 @@
 						<div class="panel-body">
 							<div class="row">
 								<div class="col-lg-12">
+								
 									<form action="addclient" method="post">
+									
 										<div class="form-group">
-											<label>CPF</label> <input class="form-control"
-												placeholder="Ex. xxx.xxx.xxx-xx">
+											<label>CPF</label> <input class="form-control" name="cpf"
+												placeholder="Ex. xxx.xxx.xxx-xx" > <form:errors path="client.cpf"/>
 										</div>
+										
 										<div class="form-group">
-											<label>Nome</label> <input class="form-control"
-												placeholder="Ex. Meu nome">
+											<label>Nome</label> <input class="form-control" name="name"
+												placeholder="Ex. Meu nome" > <form:errors path="client.name"/>
 										</div>
+										
 										<button type="submit" class="btn btn-default">Cadastrar</button>
 										<button type="reset" class="btn btn-default">Cancelar</button>
+										
 									</form>
+									
 								</div>
 								<!-- /.col-lg-6 (nested) -->
 							</div>
