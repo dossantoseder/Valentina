@@ -94,8 +94,7 @@
 							<li><a href="Cliente.html">Cliente</a></li>
 							<li><a href="imposto.html">Imposto</a></li>
 						</ul> <!-- /.nav-second-level --></li>
-					<li><a href="nota-fiscal.html"><i
-							class="fa fa-table fa-fw"></i> Notas Fiscais</a></li>
+					<li><a href="searchclient"><i class="fa fa-edit fa-fw"></i> Clients</a></li>
 				</ul>
 			</div>
 			<!-- /.sidebar-collapse -->

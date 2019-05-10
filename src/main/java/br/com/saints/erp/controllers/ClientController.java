@@ -16,6 +16,14 @@ import br.com.saints.erp.model.Client;
 public class ClientController {
 	@Autowired(required = true)
 	private ClientDAO clientDAO;
+	private Client client;
+	
+	public ClientController() {}
+	
+	public ClientController(ClientDAO clientDAO, Client client) {
+		this.clientDAO = clientDAO;
+		this.client = client;
+	}
 
 	@RequestMapping("/client")
 	public String Client() {
@@ -23,21 +31,22 @@ public class ClientController {
 	}
 
 	@RequestMapping("/addclient")
-	public String addClient(@Valid Client client, BindingResult result,  RedirectAttributes redirectAttributes) {
-	    if(result.hasErrors()) {
-	    	System.out.println("Erros null");
-	      return "redirect:/client";
-	    }else {
-	    	System.out.println("Sucesso!");
-	    redirectAttributes.addAttribute("mensagem", "Cliente adicionado com sucesso");
-	    }
+	public String addClient(@Valid Client client, BindingResult result, RedirectAttributes redirectAttributes) {
+		if (result.hasErrors()) {
+			redirectAttributes.addAttribute("mensagem", "Erro no cadastro do Cliente!");
+			return "redirect:/client";
+		} else {
+			System.out.println("Sucesso!");
+			clientDAO.save(client);
+			redirectAttributes.addAttribute("mensagem", "Cliente adicionado com sucesso!");
+		}
 		return "redirect:/client";
 	}
 
 	@RequestMapping("/searchclient")
 	public ModelAndView searchClient() {
 		ModelAndView modelAndView = new ModelAndView("client/searchclient");
-		modelAndView.addObject(null, null);
+		modelAndView.addObject("client", clientDAO.findAll());
 		return modelAndView;
 	}
 

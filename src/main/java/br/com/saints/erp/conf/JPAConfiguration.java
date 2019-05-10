@@ -26,8 +26,8 @@ public class JPAConfiguration {
         factoryBean.setJpaVendorAdapter(vendorAdapter);
 
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setUsername("root");
-        dataSource.setPassword("postgresql");
+        dataSource.setUsername("postgres");
+        dataSource.setPassword("postgres");
         dataSource.setUrl("jdbc:postgresql://localhost:5432/valentina");
         dataSource.setDriverClassName("org.postgresql.Driver");
         factoryBean.setDataSource(dataSource);
@@ -38,7 +38,7 @@ public class JPAConfiguration {
         props.setProperty("hibernate.hbm2ddl.auto", "update");
         factoryBean.setJpaProperties(props);
 
-        factoryBean.setPackagesToScan("br.com.saints.erp.conf");
+        factoryBean.setPackagesToScan("br.com.saints.erp.model");
 
         return factoryBean;
 
